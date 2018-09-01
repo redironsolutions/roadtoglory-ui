@@ -18,3 +18,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/league', 'LeagueController@index')->name('league.index');
+Route::get('/league/create', 'LeagueController@create')->name('league.create');
