@@ -36,4 +36,8 @@ class User extends Authenticatable
         'locked' => 'boolean'
     ];
 
+    public function getDisplayNameAttribute(){
+        return $this->first_name . " " . $this->last_name;
+    }
+
 }
